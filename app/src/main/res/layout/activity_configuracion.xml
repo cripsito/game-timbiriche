@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.t.hope.timbiriche.Configuracion"
+    android:background="@mipmap/fondo">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/imagen2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/usuario"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff009cff"
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editarnombre"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/color"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff009cff"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/pcolor"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/colorazul"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:onClick="CambiarColorPrueba"/>
+
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageButton5"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/boton_guardar"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:onClick="CambiarNombre"/>
+    </LinearLayout>
+
+</RelativeLayout>

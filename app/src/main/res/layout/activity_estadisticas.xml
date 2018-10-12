@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.t.hope.timbiriche.Estadisticas"
+    android:background="@mipmap/fondo">
+
+
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView8"
+        android:src="@mipmap/imagen2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/ganadas"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff009cff"
+        android:textSize="30sp"
+        android:layout_below="@+id/imageView8"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView9"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:src="@mipmap/copa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:gravity="center"
+        android:id="@+id/pung"
+        android:layout_alignBottom="@+id/imageView9"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_toEndOf="@+id/imageView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/perdidas"
+        android:id="@+id/textView100"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff009cff"
+        android:textSize="30sp"
+        android:layout_below="@+id/imageView9"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView10"
+        android:src="@mipmap/nubes"
+        android:layout_below="@+id/textView100"
+        android:layout_alignStart="@+id/textView100" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:gravity="center"
+        android:id="@+id/punp"
+        android:layout_alignTop="@+id/imageView10"
+        android:layout_alignStart="@+id/pung"
+        android:layout_alignEnd="@+id/textView100"
+        android:layout_alignBottom="@+id/imageView10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/empatadas"
+        android:id="@+id/textView1111"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff009cff"
+        android:textSize="30sp"
+        android:layout_below="@+id/imageView10"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="73dp"
+        android:id="@+id/imageView11"
+        android:src="@mipmap/caritas"
+        android:layout_below="@+id/textView1111"
+        android:layout_alignStart="@+id/textView1111"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:gravity="center"
+        android:id="@+id/pune"
+        android:layout_alignTop="@+id/imageView11"
+        android:layout_alignStart="@+id/punp"
+        android:layout_alignEnd="@+id/textView1111"
+        android:layout_alignBottom="@+id/imageView11" />
+
+    <ImageButton
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/imageButton9"
+        android:src="@mipmap/boton_menu"
+        android:onClick="menuprincipal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
